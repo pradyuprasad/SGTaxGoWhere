@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SG Tax Allocation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        label, input {
+            display: block;
+            margin: 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>SG Tax Allocation</h1>
+    
+    <label for="taxInput">Enter the amount of taxes you paid (in SGD):</label>
+    <input type="number" id="taxInput" placeholder="Enter your tax amount">
+    
+    <button onclick="calculateAllocation()">Calculate Allocation</button>
+    
+    <table id="resultTable" style="display:none;">
+        <thead>
+            <tr>
+                <th>Ministry</th>
+                <th>Percentage</th>
+                <th>Amount Allocated (SGD)</th>
+            </tr>
+        </thead>
+        <tbody id="resultBody">
+        </tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
